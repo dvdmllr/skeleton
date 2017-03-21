@@ -6,6 +6,7 @@ git clone https://github.com/dvdmllr/skeleton.git
 mv skeleton <NEW_PROJECT_NAME>
 cd <NEW_PROJECT_NAME>
 rm -rf .git
+echo '' > README.md 
 git init
 docker build -t <CONTAINER_NAME> .
 docker run -v </path/to/workspace/NEW_PROJECT_NAME>:/home/jovyan/work -it --rm -p 8888:8888 <CONTAINER_NAME>
